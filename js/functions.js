@@ -13,10 +13,10 @@ function isPalindrom(string) {
 
   for (let i = 0; i < newString.length / 2; i++) {
     if(newString.at(i) !== newString.at(-i - 1)){
-      return (newString +' '+ false);
+      return false;
     }
   }
-  return (newString +' '+ true);
+  return true;
 }
 
 console.log(isPalindrom('привет кто ты'));
